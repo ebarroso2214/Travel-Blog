@@ -40,7 +40,7 @@ A hard lesson we learned was, to communicate and Time Management.
 
 What optimizations did you make in your code? E.g. refactors, performance improvements, accessibility
 
-##Page Link
+## Page Link
 https://djfancyal.github.io/Travel-Blog/#/
 
 ## Authors
