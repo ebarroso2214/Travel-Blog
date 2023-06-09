@@ -44,7 +44,7 @@ What optimizations did you make in your code? E.g. refactors, performance improv
 
 - **[Albert](https://github.com/DJFancyAl):** BackEnd
 - **[Elka](https://github.com/Elka1214):** Content, Home Page
-- **[Estaban](https://github.com/ebarroso2214):** BackEnd
+- **[Esteban](https://github.com/ebarroso2214):** BackEnd
 - **[Yash](https://github.com/YashxPatel):** FrontEnd
 
 ## Credits
