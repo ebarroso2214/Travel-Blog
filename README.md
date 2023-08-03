@@ -20,6 +20,24 @@ Our Blog site is for the niche who likes to travel the world and share their exp
 
 - **Authentication & Authorization**
 
+- ### API
+| Method | Path                                 | Purpose                                   |
+| ------ | ------------------------------------ | ----------------------------------------- |
+| GET    | /authors                             | Get all authors                           |
+| GET    | /authors/:id                         | View Author                               |
+| POST   | /authors                             | Create a new author                       |
+| POST   | /authors/login                       | Login verifcation                         |
+| PUT    | /authors/:id                         | Update author                             |
+| GET    | /blogs                               | Get all blogs                             |
+| GET    | /blogs/:id                           | Blog view, with comments                  |
+| POST   | /blogs                               | Create new blog                           |
+| PUT    | /blogs/:id                           | Update blog                               |
+| POST   | /comments                            | Post a comment                            |
+| DELETE | /comments/:id                        | Delete comment                            |
+| DELETE | /blogs/:id                           | Delete blog                               |
+| DELETE | /authors/:id                         | Delete a particular authors               |
+
+
 The great thing about this application is that it is accessible to anyone! Users have the ability to register for an account, customize their profile, and create original content. After an account is created, the user is able to easily log in and work with their blogs or comments:
 
 ![image](https://github.com/DJFancyAl/Travel-Blog/assets/80846699/d896047e-87c0-4c93-a410-6f3b3d243919)
