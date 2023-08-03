@@ -21,6 +21,19 @@ Our Blog site is for the niche who likes to travel the world and share their exp
 - **Authentication & Authorization**
 - The great thing about this application is that it is accessible to anyone! Users have the ability to register for an account, customize their profile, and create original content. After an account is created, the user is able to easily log in and work with their blogs or comments:
 
+
+
+
+![image](https://github.com/DJFancyAl/Travel-Blog/assets/80846699/d896047e-87c0-4c93-a410-6f3b3d243919)
+
+![image](https://github.com/DJFancyAl/Travel-Blog/assets/80846699/fc8299ca-813b-45df-beb0-25c8390870d1)
+
+Upon account registration the user's password is hashed using BCrypt - so the password is always secure and cannot be viewed by another person. When the user logs in - their password is compared to the hashed password to authenticate the user.
+
+For an added layer of security - we used "JSON Web Tokens" for authorization. Basically, the user is assigned a unique web token ID, which must be used when trying to perform functions such as deleting a blog or updating a profile.
+
+Lastly, authenticated users are given options that anonymous users do not have, such as the ability to write a blog or create a comment. This is achieve with simple "if/then" statements that show these options when the user is authenticated.
+
 - ## API
 | Method | Path                                 | Purpose                                   |
 | ------ | ------------------------------------ | ----------------------------------------- |
@@ -38,18 +51,6 @@ Our Blog site is for the niche who likes to travel the world and share their exp
 | DELETE | /blogs/:id                           | Delete blog                               |
 | DELETE | /authors/:id                         | Delete a particular authors               |
 
-
-
-
-![image](https://github.com/DJFancyAl/Travel-Blog/assets/80846699/d896047e-87c0-4c93-a410-6f3b3d243919)
-
-![image](https://github.com/DJFancyAl/Travel-Blog/assets/80846699/fc8299ca-813b-45df-beb0-25c8390870d1)
-
-Upon account registration the user's password is hashed using BCrypt - so the password is always secure and cannot be viewed by another person. When the user logs in - their password is compared to the hashed password to authenticate the user.
-
-For an added layer of security - we used "JSON Web Tokens" for authorization. Basically, the user is assigned a unique web token ID, which must be used when trying to perform functions such as deleting a blog or updating a profile.
-
-Lastly, authenticated users are given options that anonymous users do not have, such as the ability to write a blog or create a comment. This is achieve with simple "if/then" statements that show these options when the user is authenticated.
 
 ## Lessons Learned
 
